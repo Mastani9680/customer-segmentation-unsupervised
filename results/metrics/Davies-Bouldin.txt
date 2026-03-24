@@ -1,0 +1,7 @@
+Silhouette Score(Kmeans): 0.4303585858767726
+Davies-Bouldin Index(Kmeans): 0.7440612204896382
+
+Silhouette Score(gmm): 0.4209332538195836
+Davies-Bouldin Index(gmm): 0.7680576854882875
+
+
