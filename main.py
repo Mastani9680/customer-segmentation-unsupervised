@@ -13,15 +13,19 @@ from sklearn.metrics import silhouette_score
 # -----------------------------
 # LOAD DATA
 # -----------------------------
-df = pd.read_csv("data.csv")
+df = pd.read_csv("D:/Mastani9680/customer-segmentation-unsupervised/data/raw/Retail_Transaction_Dataset.csv")
 
 print("Columns:", df.columns)
 
 # -----------------------------
 # DATE CONVERSION
 # -----------------------------
-df['TransactionDate'] = pd.to_datetime(df['TransactionDate'])
-
+df['TransactionDate'] = pd.to_datetime(
+    df['TransactionDate'],
+    format='mixed',
+    dayfirst=True,
+    errors='coerce'
+)
 # -----------------------------
 # RFM FEATURE ENGINEERING
 # -----------------------------
