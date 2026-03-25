@@ -26,7 +26,7 @@ ________________________________________
 
 Dataset: Retail Transaction Dataset
 Features:
-•	Customer ID 
+•	Customer ID
 •	Product ID 
 •	Quantity 
 •	Price 
@@ -36,6 +36,7 @@ Features:
 •	Store Location 
 •	Product Category 
 •	Discount 
+
 🔧 Feature Engineering
 
 •	Recency (R): Days since last purchase 
@@ -64,9 +65,13 @@ ________________________________________
 •	Derived metrics (CLV, avg spend) 
 ________________________________________
 🤖 Clustering Algorithms Implemented
+
 •	✅ K-Means Clustering 
-•	✅ Hierarchical Clustering 
+
+•	✅ Hierarchical Clustering
+
 •	✅ DBSCAN 
+
 •	✅ Gaussian Mixture Model (GMM) 
 ________________________________________
 📊 Sample Visualizations
@@ -170,32 +175,32 @@ customer-segmentation-unsupervised-mastani/
 │
 ├── data/
 │   ├── raw/
-│   │   └── retail_transactions.csv          # Original dataset (no changes)
+│   │   └── retail_transactions.csv         
 │   │
 │   ├── processed/
-│       ├── cleaned_data.csv                 # After preprocessing
-│       └── rfm_features.csv                 # After feature engineering
+│       ├── cleaned_data.csv                
+│       └── rfm_features.csv                 
 │
 ├── notebooks/
-│   ├── 01_data_preprocessing.ipynb          # Cleaning + missing values + outliers
-│   ├── 02_eda.ipynb                         # Data analysis + plots
-│   ├── 03_feature_engineering.ipynb         # RFM + derived features
-│   ├── 04_clustering_models.ipynb           # KMeans, GMM, etc.
-│   ├── 05_model_comparison.ipynb            # Metrics comparison
-│   ├── 06_visualization.ipynb               # PCA + cluster plots
+│   ├── 01_data_preprocessing.ipynb          
+│   ├── 02_eda.ipynb                        
+│   ├── 03_feature_engineering.ipynb        
+│   ├── 04_clustering_models.ipynb           
+│   ├── 05_model_comparison.ipynb            
+│   ├── 06_visualization.ipynb              
 │
 ├── src/
-│   ├── data_preprocessing.py                # Data cleaning functions
-│   ├── feature_engineering.py               # RFM + feature creation
+│   ├── data_preprocessing.py                
+│   ├── feature_engineering.py               
 │   │
 │   ├── clustering/
-│   │   ├── kmeans.py                        # K-Means model
-│   │   ├── hierarchical.py                  # Hierarchical model
-│   │   ├── dbscan.py                        # DBSCAN model
-│   │   └── gmm.py                           # Gaussian Mixture Model
+│   │   ├── kmeans.py                        
+│   │   ├── hierarchical.py                  
+│   │   ├── dbscan.py                        
+│   │   └── gmm.py                           
 │   │
-│   ├── evaluation.py                        # Silhouette, DB Index
-│   └── utils.py                             # Helper functions (plots, save files)
+│   ├── evaluation.py                        
+│   └── utils.py                             
 │
 ├── results/
 │   ├── cluster_plots/
@@ -213,9 +218,12 @@ customer-segmentation-unsupervised-mastani/
 └── main.py
 ________________________________________
 ▶️ How to Run the Project
+
 git clone https://github.com/Mastani9680/customer-segmentation-unsupervised
+
 cd customer-segmentation-unsupervised
 
 pip install -r requirements.txt
+
 python main.py
 
